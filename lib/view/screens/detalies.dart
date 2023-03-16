@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mycart/controller/detailesconroler.dart';
-import 'package:mycart/core/app_color.dart';
+import 'package:mycart/core/classesLinks.dart';
 import 'package:mycart/view/screens/shocart.dart';
 import 'package:get/get.dart';
 
@@ -25,7 +25,7 @@ class detailesproduct extends StatelessWidget {
         child: Column(children: [
           Text('تفاصيل الطلب', style: Theme.of(context).textTheme.headline3),
           Image.asset(
-            'images/s.jpg',
+            ImageName.s,
             height: 200,
           ),
           Row(
@@ -34,7 +34,7 @@ class detailesproduct extends StatelessWidget {
               ElevatedButton(
                   child: Text('+'),
                   style: ElevatedButton.styleFrom(
-                      primary: Appcolor.lightorange,
+                      primary: ColorName.lightorange,
                       padding: const EdgeInsets.symmetric(
                           horizontal: 15, vertical: 8),
                       shape: RoundedRectangleBorder(
@@ -48,7 +48,7 @@ class detailesproduct extends StatelessWidget {
               ElevatedButton(
                   child: Text('-'),
                   style: ElevatedButton.styleFrom(
-                      primary: Appcolor.lightorange,
+                      primary: ColorName.lightorange,
                       padding: const EdgeInsets.symmetric(
                           horizontal: 15, vertical: 8),
                       shape: RoundedRectangleBorder(
@@ -63,14 +63,14 @@ class detailesproduct extends StatelessWidget {
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(130)),
             elevation: 7,
-            shadowColor: Appcolor.lightorange,
+            shadowColor: ColorName.lightorange,
             child: Padding(
               padding: const EdgeInsets.only(left: 70),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   ListTile(
-                    leading: CircleAvatar(child: Image.asset('images/s.jpg')),
+                    leading: CircleAvatar(child: Image.asset(ImageName.s)),
                     title: Text(
                       'عبدالله هادي مولى الدويلة',
                       style: Theme.of(context).textTheme.headline1,
@@ -119,7 +119,7 @@ class detailesproduct extends StatelessWidget {
                           topLeft: Radius.circular(30),
                           bottomLeft: Radius.circular(30))),
                   elevation: 7,
-                  shadowColor: Appcolor.lightorange,
+                  shadowColor: ColorName.lightorange,
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
@@ -131,7 +131,7 @@ class detailesproduct extends StatelessWidget {
                           label: Text('اضافة ال السلة',
                               style: Theme.of(context).textTheme.headline1),
                           style: ElevatedButton.styleFrom(
-                              primary: Appcolor.lightorange,
+                              primary: ColorName.lightorange,
                               padding: const EdgeInsets.symmetric(
                                   horizontal: 45, vertical: 10),
                               shape: RoundedRectangleBorder(

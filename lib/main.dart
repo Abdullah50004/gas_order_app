@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'controller/utilits/bindeing.dart';
 import 'package:get/get.dart';
+import 'core/classesLinks.dart';
 import 'view/screens/detalies.dart';
 import 'view/screens/shocart.dart';
 
@@ -15,10 +16,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
           primarySwatch: Colors.blue,
-          fontFamily: 'Vazirmatn',
+          fontFamily: FontName.vazirmatn,
           textTheme: const TextTheme(
             headline1: TextStyle(fontSize: 20, fontWeight: FontWeight.normal),
             headline3: TextStyle(fontSize: 30, fontStyle: FontStyle.italic),

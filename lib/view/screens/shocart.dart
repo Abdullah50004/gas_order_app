@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:mycart/core/app_color.dart';
+import 'package:mycart/core/classesLinks.dart';
 import '../../controller/home_controller.dart';
+// ignore: depend_on_referenced_packages
 import 'package:get/get.dart';
-
-import 'detalies.dart';
 
 class Cartshopscreen extends StatelessWidget {
   const Cartshopscreen({super.key});
@@ -41,7 +40,7 @@ class cartshop extends StatelessWidget {
                   child: const ListTile(
                     leading: CircleAvatar(
                       backgroundImage: AssetImage(
-                        'images/s.jpg',
+                        ImageName.s,
                       ),
                     ),
                     title: Text('اسطوانة غاز للاستبدال'),
@@ -57,7 +56,7 @@ class cartshop extends StatelessWidget {
                 ElevatedButton(
                     child: Text('+'),
                     style: ElevatedButton.styleFrom(
-                        primary: Appcolor.lightorange,
+                        primary: ColorName.lightorange,
                         padding: const EdgeInsets.symmetric(
                             horizontal: 10, vertical: 7),
                         shape: RoundedRectangleBorder(
@@ -93,7 +92,7 @@ class cartshop extends StatelessWidget {
                     style: TextStyle(fontSize: 20),
                   ),
                   style: ElevatedButton.styleFrom(
-                      primary: Appcolor.lightorange,
+                      primary: ColorName.lightorange,
                       padding: const EdgeInsets.symmetric(
                           horizontal: 50, vertical: 15),
                       shape: RoundedRectangleBorder(
@@ -107,7 +106,7 @@ class cartshop extends StatelessWidget {
                     style: TextStyle(fontSize: 20, fontFamily: 'Vazirmatn'),
                   ),
                   style: ElevatedButton.styleFrom(
-                      primary: Appcolor.lightorange,
+                      primary: ColorName.lightorange,
                       padding: const EdgeInsets.symmetric(
                           horizontal: 40, vertical: 15),
                       shape: RoundedRectangleBorder(
@@ -125,7 +124,7 @@ class cartshop extends StatelessWidget {
             ElevatedButton(
                 child: Text('عمل طلب'),
                 style: ElevatedButton.styleFrom(
-                    primary: Appcolor.lightorange,
+                    primary: ColorName.lightorange,
                     padding: const EdgeInsets.symmetric(
                         horizontal: 50, vertical: 15),
                     shape: RoundedRectangleBorder(
